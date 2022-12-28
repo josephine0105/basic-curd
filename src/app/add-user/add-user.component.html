@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="card">
+    <div class="card-body">
+    <form [formGroup]="userForm">
+      <div class="form-group">
+        <label class="form-label">Name:</label>
+        <input
+          type="text"
+          name="name"
+          class="form-control"
+          formControlName="name"
+        />
+      </div>
+      <div class="form-group">
+        <label class="form-label">Email:</label>
+        <input
+          type="email"
+          name="email"
+          class="form-control"
+          formControlName="email"
+        />
+      </div>
+      <div class="form-group">
+        <label class="form-label">Phone no:</label>
+        <input
+          type="number"
+          name="phone"
+          class="form-control"
+          formControlName="phone"
+        />
+      </div>
+      <div class="p-1 m-1">
+        <button class="btn btn-primary" type="submit" (click)="login()">Submit</button>
+        <button class="btn btn-secondary" type="submit" (click)="viewDetails()">
+          View User
+        </button>
+      </div>
+      
+    </form>
+  </div>
+</div>
